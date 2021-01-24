@@ -1,3 +1,4 @@
 a.out
 *.out
 birthday/birthday.o
+**/*.o
