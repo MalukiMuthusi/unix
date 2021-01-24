@@ -13,5 +13,5 @@ CFLAGS = ${IMPL_CFLAGS}
 IMPL_THREAD_FLAGS = -pthread
 CODE_DIR = ..
 INCL_DIR = ${CODE_DIR}/lib
-LIB_OBJECT= ${CODE_DIR}/libbi.a
+#LIB_OBJECT= ${CODE_DIR}/libbi.a
 LINUX_LIBRT = -lrt

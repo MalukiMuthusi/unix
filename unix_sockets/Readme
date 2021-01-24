@@ -1,0 +1,17 @@
+Unix Stream sockets.
+===================
+
+This is a simple program that creates a client and a server that interact through unix sockets.
+The client reads input from the STDINFILE and writes to a socket.
+The server reads from the clients socket and writes to the STDOUTFILE.
+
+How the server works
+====================
+
+The server creates a socket. It checks the provided file path if it exists.
+The server then binds an address to the socket path.
+It then listens for connections.
+The server accepts connections from clients.
+It creates a new socket for each client. The server and the client use this new socket to exchange data.
+
+This is an interactive server. The server processes a single client request at time. It blocks other clients.
